@@ -11,7 +11,7 @@ module.exports = {
     node: true,
     es6: true,
   },
-  plugins: [],
+  plugins: ['prettier'],
   settings: {
     react: {
       version: 'detect',
@@ -26,5 +26,16 @@ module.exports = {
     'no-console': 'error',
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
+    'no-unused-vars': [
+      'off',
+      { vars: 'all', args: 'after-used', ignoreRestSiblings: false },
+    ],
+    'import/extensions': 'off',
+    'prettier/prettier': 0,
+    // "prettier/prettier": [
+    //   "error", {
+    //     "endOfLine": "auto"
+    //   }
+    // ]
   },
 }
