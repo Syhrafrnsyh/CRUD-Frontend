@@ -25,11 +25,11 @@ const Sidebar = () => {
               <IoHome /> Dashboard
             </NavLink>
           </li>
-          {/* <li>
-            <NavLink to={"/products"}>
+          <li>
+            <NavLink to={'/products'}>
               <IoPricetag /> Products
             </NavLink>
-          </li> */}
+          </li>
         </ul>
         {user && user.role === 'admin' && (
           <div>
